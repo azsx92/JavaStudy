@@ -8,7 +8,7 @@ class Tv2 {
 	
 	//Tv의 기능(메서드)
 	void power() 		{power = !power;} //TV를 켜거나 끄는 기능을 하는 메서드
-	void channelUp() 	{ ++channel;} 	  //TV를 채널을 높이는 기능을 하는 메서드
+	void channelUp() 	{ ++channel;} 	  //TV를를 채널을 높이는 기능을 하는 메서드
 	void channelDown() 	{ --channel;} 	 //TV를 켜거나 끄는 기능을 하는 메서드
 	
 }
