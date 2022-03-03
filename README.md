@@ -20,3 +20,5 @@ https://backlog.com/git-tutorial/kr/intro/intro2_4.html
 ### 평화의 veLog  	
 https://velog.io/@azsx92/
 
+### 평화의 반성
+피하지말고 맞서라 
