@@ -21,4 +21,6 @@ https://backlog.com/git-tutorial/kr/intro/intro2_4.html
 https://velog.io/@azsx92/
 
 ### 평화의 반성
-피하지말고 맞서라 
+1.피하지말고 맞서라 
+2.정신 차려라 평화야!!!
+
