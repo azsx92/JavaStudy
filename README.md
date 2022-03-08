@@ -13,6 +13,9 @@
 	기초가 디뎌 있지 않다면 높은곳으로 올라갈 수가 없다. 
 	그렇기에 기초를 더욱 단단히 다져서 천천히 올라갈 생각이다. 
 	
+### 스피치 연습을 해야하는 이유
+	어휘력공부하기
+	
 ### git hub 튜터리얼 	
 https://backlog.com/git-tutorial/kr/intro/intro2_4.html
 
