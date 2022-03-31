@@ -35,13 +35,13 @@ public class EX11_4 implements List {
 		if (minCapacity - data.length > 0)
 			setCapctity(minCapacity);
 	}
-	
+	 
 
 	@Override
-	public boolean add(Object e) {
+	public boolean add(Object obj) {
 		// 새로운 객체를 저장한기 전에 저장한 공간을 확보한다.
 		ensureCapacity(size+1);
-		
+		data[size++] = obj;
 		return true;
 	}
 
@@ -62,7 +62,7 @@ public class EX11_4 implements List {
 		
 		//삭제하고자 하는 개체가 마지막 객체가 아니라면 , 배열복사를 통해 빈자리를 채워줘야 한다.
 		if(index != size-1) {
-			System.arraycopy(data, index-1, data , index , size-index-1);
+			System.arraycopy(data, index+1, data , index , size-index-1);
 		}
 		// 마지막 데이터를 null로 한다. 배열은 0 	부터 시작하므로 마지막 요소는 index가 size-1이다.
 		data[size-1] = null;
@@ -102,10 +102,19 @@ public class EX11_4 implements List {
 			size = 0;
 		
 	}
+	
+	@Override
+	public Object[] toArray()  
+	{
+		Object[] result = new Object[size];
+		System.arraycopy(data, 0, result, 0, size);
+		return result;
+	}
+	
 	@Override
 	public boolean isEmpty() {		return  size == 0;	}
 	public int capacity() {		return  capacity;	}
-	
+	public int size() {		return size;	}
 	
     /************************************
 	  List 인터페이스로부터 상속받은 메서드들 
@@ -126,9 +135,6 @@ public class EX11_4 implements List {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
-	@Override
-	public Object[] toArray()           {	return null;	}
 	
 	@Override
 	public Object[] toArray(Object[] a) {	return null;	}
@@ -168,7 +174,7 @@ public class EX11_4 implements List {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
+ 
 	@Override
 	public void add(int index, Object element) {
 		// TODO Auto-generated method stub
@@ -205,9 +211,4 @@ public class EX11_4 implements List {
 		return null;
 	}
 
-	@Override
-	public int size() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
 }

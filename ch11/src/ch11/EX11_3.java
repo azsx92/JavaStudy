@@ -3,6 +3,8 @@ package ch11;
 import java.util.Vector;
 
 public class EX11_3 {
+
+
 	public static void main(String[] args) {
 		Vector v = new  Vector(5);  //용량(capacity)이 5인 Vector를 생성한다.
 		
