@@ -11,13 +11,13 @@ public class EX8_23 {
 		} // try-catch의 끝
 	} // main
 
-	static void install() throws InstallException {
+	static void install() throws InstallException { 
 		try {
-			startInstall(); // 프로그램 설치에 필요한 준비를 한다.
+			startInstall(); // 프로그램 설치에 필요한 준비를 한다. 
 			copyFiles(); // 파일을 복사 한다.
 		} catch (SpaceException e) {
 			InstallException ie = new InstallException("설치 중 예외발생");
-			ie.initCause(e);
+			ie.initCause(e); 
 			throw ie;
 		} catch (MemoryException me) {
 			InstallException ie = new InstallException("설치 중 예외발생");
